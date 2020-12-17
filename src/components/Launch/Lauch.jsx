@@ -2,7 +2,7 @@ import React from 'react';
 import Shoes from '../../shoes.json';
 import { Link } from 'react-router-dom';
 
-export const Products = () => {
+export const Launch = () => {
 
     console.log("Shoes =>", Shoes);
     return (
