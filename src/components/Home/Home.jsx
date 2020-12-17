@@ -11,13 +11,13 @@ export const Home = () => {
     return (
         <div>
             <Grid container>
-                {Object.keys(Shoes).map((item, ind) => {
+                {Object.keys(Shoes).map((item) => {
                     return (
                         <Grid item md={4} className={styles.gridItem}>
                             <div>
                                 <Link to={`/${item}`}>
                                     <img src={Shoes[item].img} alt={item} className={styles.img} />
-                                    <h2>{Shoes[item].name}</h2>
+                                    <h2 key={item}>{Shoes[item].name}</h2>
                                 </Link>
                             </div>
                         </Grid>
