@@ -12,12 +12,13 @@ export const Home = () => {
         <div>
             <Grid container>
                 {Object.keys(Shoes).map((item) => {
+                    const shoe = Shoes[item];
                     return (
                         <Grid item md={4} className={styles.gridItem}>
                             <div>
                                 <Link to={`/${item}`}>
-                                    <img src={Shoes[item].img} alt={item} className={styles.img} />
-                                    <h2 key={item}>{Shoes[item].name}</h2>
+                                    <img src={shoe.img} alt={item} className={styles.img} />
+                                    <h2 key={item}>{shoe.name}</h2>
                                 </Link>
                             </div>
                         </Grid>
