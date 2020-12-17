@@ -8,7 +8,7 @@ export const NavBar = () => {
     return (
         <div className={styles.container}>
             <Link to="/">Home</Link>{(' || ')}
-            <Link to="products">Products</Link>
+            <Link to="launch">Launch</Link>
         </div>
     )
 }
