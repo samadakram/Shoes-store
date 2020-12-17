@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Shoes from '../../shoes.json';
+import { Grid } from '@material-ui/core';
 
 export const ProductItem = () => {
 
@@ -14,10 +15,18 @@ export const ProductItem = () => {
     return (
         <div>
             <h1>Product Item</h1>
-            <div>
-                <img src={shoe.img} alt={shoe} height={250} />
-                <h2>{shoe.name}</h2>
-            </div>
+            <Grid container>
+                <Grid item md={6}>
+                    <div>
+                        <img src={shoe.img} alt={shoe} width={"100%"} height={400} />
+                    </div>
+                </Grid>
+                <Grid item md={6}>
+                    <div>
+                        <h2>{shoe.name}</h2>
+                    </div>
+                </Grid>
+            </Grid>
         </div>
     )
 }
