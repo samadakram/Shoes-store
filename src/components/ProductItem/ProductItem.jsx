@@ -24,7 +24,6 @@ export const ProductItem = () => {
   if (!shoe) {
     return <h1>Product Not Found!</h1>
   }
-  console.log("Shoe =>", shoe);
 
   return (
     <div>
