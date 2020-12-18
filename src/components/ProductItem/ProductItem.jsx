@@ -27,7 +27,7 @@ export const ProductItem = () => {
 
   return (
     <div>
-      <h1 className={styles.heading}>Product Details</h1>
+      <Typography variant="h2" className={styles.heading}>Product Details</Typography>
       <Grid container>
         <Grid item xs={12} md={6} className={styles.grid}>
           <div>
