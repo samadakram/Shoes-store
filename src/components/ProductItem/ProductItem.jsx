@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import Shoes from '../../shoes.json';
-import { Grid, Typography, InputLabel, FormControl, NativeSelect, FormHelperText } from '@material-ui/core';
+import { Grid, Typography, InputLabel, FormControl, NativeSelect } from '@material-ui/core';
 import styles from './Item.module.css';
 
 export const ProductItem = () => {
