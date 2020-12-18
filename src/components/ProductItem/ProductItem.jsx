@@ -30,12 +30,12 @@ export const ProductItem = () => {
         <div>
             <h1>Product Item</h1>
             <Grid container>
-                <Grid item md={6} className={styles.grid}>
+                <Grid item xs={12} md={6} className={styles.grid}>
                     <div>
                         <img src={shoe.img} alt={shoe} width={"100%"} height={400} />
                     </div>
                 </Grid>
-                <Grid item md={6} className={styles.grid}>
+                <Grid item xs={12} md={6} className={styles.grid}>
                     <div>
                         <Typography variant="h5">
                             <h2>{shoe.name}</h2>
