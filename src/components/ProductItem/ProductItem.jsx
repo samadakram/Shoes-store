@@ -52,7 +52,7 @@ export const ProductItem = () => {
                         <Typography variant="h6" gutterBottom>
                             Available Options
                         </Typography>
-                        <FormControl>
+                        <FormControl className={styles.formControl}>
         <InputLabel shrink htmlFor="age-native-label-placeholder">
           Size
         </InputLabel>
