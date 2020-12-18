@@ -1,13 +1,13 @@
 import React from 'react';
 import Shoes from '../../shoes.json';
 import { Link } from 'react-router-dom';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import styles from './Launch.module.css';
 
 export const Launch = () => {
     return (
         <div>
-            <h1>Products</h1>
+            <Typography variant="h2" className={styles.h2}>New Launch</Typography>
             <Grid container>
                 {Object.keys(Shoes).map((item) => {
                     const shoe = Shoes[item];
