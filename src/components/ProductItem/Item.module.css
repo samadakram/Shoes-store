@@ -3,6 +3,10 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+.heading{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
 .formControl {
     width: 90%;
 }
