@@ -12,7 +12,7 @@ export const NavBar = () => {
                     <Typography variant="h5" color="primary">SHOE STORE</Typography>
                 </Grid>
                 <Grid item xs={12} md={6} className={styles.gridItem}>
-                    <Link to="/" className={styles.link}>Home</Link>{(' || ')}
+                    <Link to="/" className={styles.link}>Home</Link>
                     <Link to="launch" className={styles.link}>Launch</Link>
                 </Grid>
             </Grid>
