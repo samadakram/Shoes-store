@@ -36,8 +36,8 @@ export const ProductItem = () => {
         </Grid>
         <Grid item xs={12} md={6} className={styles.grid}>
           <div>
-            <Typography variant="h5">
-              <h2>{shoe.name}</h2>
+            <Typography variant="h2">
+             {shoe.name}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
               BRAND: Studio Footwear
