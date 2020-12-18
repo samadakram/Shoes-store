@@ -1,8 +1,10 @@
 .grid {
     border: 1px solid black;
+    padding-left: 30px;
 }
 
 .select {
     width: 500px;
     background-color: blue;
+    border-radius: 10px;
 }
