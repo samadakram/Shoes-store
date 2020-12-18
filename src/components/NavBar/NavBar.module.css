@@ -9,6 +9,7 @@
     text-decoration: none;
     font-weight: bold;
     color: #f3ca20;
+    margin-left: 20px;
 }
 .link:focus{
     border: 1px solid aqua;
