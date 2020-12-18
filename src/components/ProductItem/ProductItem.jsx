@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Shoes from '../../shoes.json';
 import { Grid } from '@material-ui/core';
-import styles from 'ProductItem.module.css';
 
 export const ProductItem = () => {
 
@@ -17,12 +16,12 @@ export const ProductItem = () => {
         <div>
             <h1>Product Item</h1>
             <Grid container>
-                <Grid item md={6} className={styles.gridItem}>
+                <Grid item md={6}>
                     <div>
                         <img src={shoe.img} alt={shoe} width={"100%"} height={400} />
                     </div>
                 </Grid>
-                <Grid item md={6} className={styles.gridItem}>
+                <Grid item md={6}>
                     <div>
                         <h2>{shoe.name}</h2>
                     </div>
