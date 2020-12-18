@@ -14,7 +14,7 @@ export const Home = () => {
                 {Object.keys(Shoes).map((item) => {
                     const shoe = Shoes[item];
                     return (
-                        <Grid item md={4} className={styles.gridItem}>
+                        <Grid item xs={12} md={4} className={styles.gridItem}>
                             <div>
                                 <Link to={`/launch/${item}`} className={styles.link}>
                                     <img src={shoe.img} alt={item} className={styles.img} />
