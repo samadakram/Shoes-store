@@ -10,7 +10,11 @@
     font-weight: bold;
     color: #f3ca20;
     margin-left: 20px;
+    padding: 5px;
 }
 .link:focus{
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
+    background-color: #f3ca20;
+    color: #000000;
+    padding: 5px;
 }
