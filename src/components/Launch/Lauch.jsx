@@ -12,7 +12,7 @@ export const Launch = () => {
                 {Object.keys(Shoes).map((item) => {
                     const shoe = Shoes[item];
                     return (
-                        <Grid item md={4} className={styles.gridItem}>
+                        <Grid item xs={12} md={4} className={styles.gridItem}>
                             <Link to={`/launch/${item}`} className={styles.link}>
                                 <img src={shoe.img} alt={shoe} height={250} />
                                 <h2 key={item}>{shoe.name}</h2>
