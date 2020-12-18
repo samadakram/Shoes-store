@@ -1,3 +1,8 @@
 .grid {
     border: 1px solid black;
 }
+
+.select {
+    width: 500px;
+    background-color: blue;
+}
