@@ -2,9 +2,11 @@
     border: 1px solid black;
     padding-left: 30px;
 }
-
+.formControl {
+    width: 90%;
+}
 .select {
-    width: 500px;
+    width: 100% !important;
     background-color: blue;
     border-radius: 10px;
 }
