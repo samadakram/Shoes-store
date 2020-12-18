@@ -24,7 +24,7 @@ export const ProductItem = () => {
                 </Grid>
                 <Grid item md={6} className={styles.grid}>
                     <div>
-                        <Typography>
+                        <Typography variant="h5">
                             <h2>{shoe.name}</h2>
                         </Typography>
                     </div>
