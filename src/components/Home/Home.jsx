@@ -16,7 +16,7 @@ export const Home = () => {
                     return (
                         <Grid item md={4} className={styles.gridItem}>
                             <div>
-                                <Link to={`/launch/${item}`}>
+                                <Link to={`/launch/${item}`} className={styles.link}>
                                     <img src={shoe.img} alt={item} className={styles.img} />
                                     <h2 key={item}>{shoe.name}</h2>
                                 </Link>
