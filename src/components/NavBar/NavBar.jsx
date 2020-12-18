@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
     return (
-        <div className={styles.container}>
-            <Grid container>
+            <Grid container className={styles.container}>
                 <Grid item xs={12} md={6} className={styles.gridItem}>
                     <Typography variant="h5" color="primary">SHOE STORE</Typography>
                 </Grid>
@@ -17,6 +16,5 @@ export const NavBar = () => {
                     <Link to="launch" className={styles.link}>Launch</Link>
                 </Grid>
             </Grid>
-        </div>
     )
 }
