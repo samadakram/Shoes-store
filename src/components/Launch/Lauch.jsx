@@ -5,8 +5,6 @@ import { Grid } from '@material-ui/core';
 import styles from './Launch.module.css';
 
 export const Launch = () => {
-
-    console.log("Shoes =>", Shoes);
     return (
         <div>
             <h1>Products</h1>
