@@ -13,7 +13,7 @@ export const Launch = () => {
                     const shoe = Shoes[item];
                     return (
                         <Grid item md={4} className={styles.gridItem}>
-                            <Link to={`/launch/${item}`}>
+                            <Link to={`/launch/${item}`} className={styles.link}>
                                 <img src={shoe.img} alt={shoe} height={250} />
                                 <h2 key={item}>{shoe.name}</h2>
                             </Link>
