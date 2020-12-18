@@ -10,3 +10,6 @@
     font-weight: bold;
     color: #f3ca20;
 }
+.link:focus{
+    border: 1px solid aqua;
+}
