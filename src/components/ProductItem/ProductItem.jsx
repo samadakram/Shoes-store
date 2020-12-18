@@ -65,7 +65,7 @@ export const ProductItem = () => {
             id: 'age-native-label-placeholder',
           }}
         >
-          <option value="">Please Select</option>
+          <option value="">---Please Select---</option>
           <option value={6}>PK 6 - EU 36</option>
           <option value={7}>PK 7 - EU 37</option>
           <option value={8}>PK 8 - EU 38</option>
