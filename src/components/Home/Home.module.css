@@ -1,5 +1,6 @@
 .gridItem {
     border: 1px solid black;
+    text-align: center;
 }
 .img {
     height: 250px;
