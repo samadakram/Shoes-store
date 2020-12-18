@@ -43,7 +43,7 @@ export const ProductItem = () => {
               BRAND: Studio Footwear
                         </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              Product Code: geet-fone-320009
+              Product Code: {shoe.code}
                         </Typography>
             <Typography variant="subtitle2" gutterBottom>
               Availability: In Stock
