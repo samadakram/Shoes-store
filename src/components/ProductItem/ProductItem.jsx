@@ -74,7 +74,6 @@ export const ProductItem = () => {
           <option value={11}>PK 11 - EU 41</option>
           <option value={12}>PK 12 - EU 42</option>
         </NativeSelect>
-        <FormHelperText>Label + placeholder</FormHelperText>
       </FormControl>
                     </div>
                 </Grid>
