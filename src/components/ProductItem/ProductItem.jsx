@@ -1,10 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import Shoes from '../../shoes.json';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, InputLabel, FormControl, NativeSelect, FormHelperText } from '@material-ui/core';
 import styles from './Item.module.css';
 
 export const ProductItem = () => {
+
+    const [state, setState] = useState({
+    age: '',
+    name: 'hai',
+  }); // Material Ui
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    setState({
+      ...state,
+      [name]: event.target.value,
+    });
+  };
 
     const { id } = useParams();
     const shoe = Shoes[id];
@@ -27,6 +40,42 @@ export const ProductItem = () => {
                         <Typography variant="h5">
                             <h2>{shoe.name}</h2>
                         </Typography>
+                        <Typography variant="subtitle2" gutterBottom>
+                            BRAND: Studio Footwear
+                        </Typography>
+                        <Typography variant="subtitle2" gutterBottom>
+                            Product Code: geet-fone-320009
+                        </Typography>
+                        <Typography variant="subtitle2" gutterBottom>
+                            Availability: In Stock
+                        </Typography>
+                        <Typography variant="h6" gutterBottom>
+                            Available Options
+                        </Typography>
+                        <FormControl>
+        <InputLabel shrink htmlFor="age-native-label-placeholder">
+          Size
+        </InputLabel>
+        <NativeSelect
+          className={styles.select}
+          value={state.age}
+          onChange={handleChange}
+          inputProps={{
+            name: 'age',
+            id: 'age-native-label-placeholder',
+          }}
+        >
+          <option value="">Please Select</option>
+          <option value={6}>PK 6 - EU 36</option>
+          <option value={7}>PK 7 - EU 37</option>
+          <option value={8}>PK 8 - EU 38</option>
+          <option value={9}>PK 9 - EU 39</option>
+          <option value={10}>PK 10 - EU 40</option>
+          <option value={11}>PK 11 - EU 41</option>
+          <option value={12}>PK 12 - EU 42</option>
+        </NativeSelect>
+        <FormHelperText>Label + placeholder</FormHelperText>
+      </FormControl>
                     </div>
                 </Grid>
             </Grid>
